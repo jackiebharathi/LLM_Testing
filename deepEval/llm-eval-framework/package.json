@@ -1,0 +1,22 @@
+{
+  "name": "llm-eval-framework",
+  "version": "1.0.0",
+  "description": "LLM Evaluation Framework using Playwright + DeepEval",
+  "type": "module",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:quality": "npx playwright test tests/response-quality.spec.ts",
+    "test:faithfulness": "npx playwright test tests/faithfulness.spec.ts",
+    "test:conversation": "npx playwright test tests/conversation-flow.spec.ts",
+    "test:api": "npx playwright test tests/api-integration.spec.ts",
+    "test:report": "npx playwright show-report"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
