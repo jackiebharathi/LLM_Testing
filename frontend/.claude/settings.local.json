@@ -1,8 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(ls:*)",
-      "Bash(npm run test:before:*)"
-    ]
-  }
-}
